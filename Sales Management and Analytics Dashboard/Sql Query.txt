@@ -1,0 +1,13 @@
+create database sales;
+use sales;
+create table sales_data(datee date,pro_code int,pro_name text,price int,qty int,total int);
+
+select*from sales_data;
+-- drop table sales_data
+
+create table admin_m(adminId integer not null primary key,adminName text,adminpass text);
+-- drop table admin;
+
+insert into admin_m values(101,'Magi','Magi101A'),(102,'Hassan','Hass102A'),(103,'Kumuru','Kumu103A');
+sELECT *from admin_m;
+select *from admin_m where adminId = 101 and adminpass = "Magi101A";
